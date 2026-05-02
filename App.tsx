@@ -9,11 +9,11 @@ const MOCK_DRIVER: Driver = {
   name: "Carlo Estrada",
   rating: 4.9,
   vehicle: "L300 (White)",
-  plate: "NFJ 226",
+  plate: "NFJ 2264",
   photo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp9gUW2BGgVMj-w-IjFh3mJyogC7XuJkerSIFEGSXpEXTaSmpqkwg2_nut&s=10",
-  deliverySchedule: "May 3, 9:30 AM",
+  deliverySchedule: "9:30 AM May 3, Sunday",
   distance: "33 kilometers",
-  departureTime: "9:30 AM May 3"
+  departureTime: "9:30 AM May 3, Sunday"
 };
 
 const App: React.FC = () => {
