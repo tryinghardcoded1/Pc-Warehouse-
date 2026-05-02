@@ -55,7 +55,7 @@ const App: React.FC = () => {
       <div className="flex-grow relative h-full flex flex-col md:flex-row">
         
         {/* Map Container */}
-        <section className="flex-1 relative h-[50vh] md:h-full z-10">
+        <section className="flex-1 relative h-[35vh] md:h-full z-10">
           <MapArea embedCode={embedCode} />
           
           {/* Floating Embed Button for Desktop */}
@@ -79,9 +79,9 @@ const App: React.FC = () => {
             <div className="w-12 h-1 bg-gray-200 rounded-full"></div>
           </div>
 
-          <div className="p-6 md:p-10 flex flex-col h-full">
+          <div className="p-4 md:p-6 lg:p-8 flex flex-col h-full">
             {/* Desktop Brand (Hidden on Mobile) */}
-            <div className="hidden md:flex items-center gap-3 mb-10">
+            <div className="hidden md:flex items-center gap-3 mb-6">
               <div className="w-10 h-10 bg-blue-900 rounded-xl flex items-center justify-center shadow-lg shadow-blue-900/20">
                 <svg className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
