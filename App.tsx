@@ -13,7 +13,8 @@ const MOCK_DRIVER: Driver = {
   photo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp9gUW2BGgVMj-w-IjFh3mJyogC7XuJkerSIFEGSXpEXTaSmpqkwg2_nut&s=10",
   deliverySchedule: "9:30 AM May 3, Sunday",
   distance: "33 kilometers",
-  departureTime: "9:30 AM May 3, Sunday"
+  departureTime: "9:30 AM May 3, Sunday",
+  stopovers: ["SM City Molino", "Evia Lifestyle Center", "NOMO - A Garden City", "Vista Mall Taguig"]
 };
 
 const App: React.FC = () => {
@@ -24,7 +25,7 @@ const App: React.FC = () => {
         height="450" 
         frameborder="0" 
         style="border:0" 
-        src="https://www.google.com/maps?saddr=Matulungin,Marilao,3019+Bulacan&daddr=109+Mayon+St,Taguig&output=embed" 
+        src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d123610.15830919163!2d121.002447!3d14.408795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x3397d5407be44f3f%3A0x755154546b3b4d4c!2sBacoor%2C%20Cavite!3m2!1d14.4505!2d120.9621!4m5!1s0x3397d19f676b6ede%3A0x71e9a7df9966d927!2s109%20Mayon%20St%2C%20Taguig%2C%20Metro%20Manila!3m2!1d14.535!2d121.0567!5e0!3m2!1sen!2sph!4v1714745000000!5m2!1sen!2sph" 
         allowfullscreen>
       </iframe>
     </div>

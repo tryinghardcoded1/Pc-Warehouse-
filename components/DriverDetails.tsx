@@ -64,8 +64,8 @@ const DriverDetails: React.FC<DriverDetailsProps> = ({ driver }) => {
         <div className="relative pl-7 pb-1 border-l-2 border-blue-900/10 ml-2">
           <div className="absolute -left-2 top-0 w-4 h-4 bg-blue-900 rounded-full border-2 border-white"></div>
           <div>
-            <p className="text-[10px] font-bold text-blue-900 uppercase tracking-wider">En Route</p>
-            <p className="text-base font-bold text-gray-900 mt-1">Arrival: Unavailable</p>
+            <p className="text-[10px] font-bold text-blue-900 uppercase tracking-wider">In Transit</p>
+            <p className="text-base font-bold text-gray-900 mt-1">Arrival: 3 hours</p>
             <p className="text-[11px] text-gray-500 mt-0.5">
               Departure: {driver.departureTime || 'TBA'}
             </p>
@@ -80,6 +80,16 @@ const DriverDetails: React.FC<DriverDetailsProps> = ({ driver }) => {
             )}
           </div>
         </div>
+
+        {driver.stopovers?.map((stop, index) => (
+          <div key={index} className="relative pl-7 pb-1 border-l-2 border-blue-900/10 ml-2">
+            <div className="absolute -left-[5px] top-1 w-2 h-2 bg-gray-300 rounded-full"></div>
+            <div>
+              <p className="text-[9px] font-bold text-gray-400 uppercase tracking-wider">Stopover {index + 1}</p>
+              <p className="text-xs font-semibold text-gray-600 mt-0.5">{stop}</p>
+            </div>
+          </div>
+        ))}
         
         <div className="relative pl-7 ml-2">
           <div className="absolute -left-2 top-0 w-4 h-4 bg-gray-200 rounded-full border-2 border-white"></div>

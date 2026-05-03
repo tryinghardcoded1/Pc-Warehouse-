@@ -8,6 +8,7 @@ export interface Driver {
   deliverySchedule?: string;
   distance?: string;
   departureTime?: string;
+  stopovers?: string[];
 }
 
 export interface TrackingState {
